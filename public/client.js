@@ -45,7 +45,9 @@ function appendMessage(msg, type) {
               class="bg-zinc-900 h-full flex items-center justify-center px-6 py-2"
               >${msg.user}</span
             >
-            <span class="px-5 py-2 max-w-[20rem]">${msg.message}</span>
+            <span class="px-2 sm:px-5 py-2 max-w-[10rem] text-sm sm:text-base sm:max-w-[20rem]">${
+              msg.message
+            }</span>
           </div>
     `;
   mainDiv.innerHTML = markUp;
