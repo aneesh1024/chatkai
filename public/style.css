@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: #212121;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #3b3b3b;
+    border: 2px solid #212121;
+}
+
+.neuromorphism{
+    background: #212121;
+    box-shadow: 8px 8px 18px #111111,
+        -8px -8px 18px #313131;
+}
+
+.message-wrapper{
+    display: grid;
+    margin: 1rem 0;
+}
+
+.message > span{
+    color: white;
+    border-radius: 10px;
+}
+
+.message > span:last-child{
+    display: flex;
+    background: #4136db;
+    overflow: hidden;
+}
+
+.message.left{
+    justify-self: flex-start;
+}
+.message.right{
+    justify-self: flex-end;
+}
+.message.left > span:last-child{
+    border-bottom-left-radius: 0;
+}
+.message.right > span:last-child{
+    border-bottom-right-radius: 0;
+}
+
+
+
+
+
+
